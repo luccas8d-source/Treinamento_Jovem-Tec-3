@@ -5,7 +5,7 @@ Jan: real
 Fev: real
 Mar: real
 soma: real
-
+Maior: real
 
 inicio
 
@@ -18,38 +18,36 @@ leia(Fev)
 escreval("Qual foi o valor de Março?: ")
 leia(Mar)
 
-soma <- (Jan + Fev + Mar)
+soma <- Jan + Fev + Mar
 
 se soma > 17000 entao
-escreval("Meta trimestral foi atingida")
+   escreval("Meta trimestral foi atingida")
 senao
-escreval("Meta trimestral não foi atingida")
+   escreval("Meta trimestral não foi atingida")
 fimse
 
 Maior <- Jan
 
-   se Fev > Maior entao
-      Maior <- Fev
-   fimse
+se Fev > Maior entao
+   Maior <- Fev
+fimse
 
-   se Mar > Maior entao
-      Maior <- Mar
-   fimse
+se Mar > Maior entao
+   Maior <- Mar
+fimse
 
-   escreval("Maior valor de vendas: ", Maior)
-    
-   se Jan = Maior entao
-      escreval("Janeiro teve o maior valor")
-   fimse
+escreval("Maior valor de vendas: ", Maior)
 
-    se Fev = Maior entao
-      escreval("Fevereiro teve o maior valor")
-   fimse
+se Jan = Maior entao
+   escreval("Janeiro teve o maior valor")
+fimse
 
-   se Mar = Maior entao
-      escreval("Marco teve o maior valor")
-   fimse
+se Fev = Maior entao
+   escreval("Fevereiro teve o maior valor")
+fimse
 
-
+se Mar = Maior entao
+   escreval("Março teve o maior valor")
+fimse
 
 fimalgoritmo
