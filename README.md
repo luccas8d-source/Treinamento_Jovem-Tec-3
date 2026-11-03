@@ -1,0 +1,1 @@
+Este projeto verifica se uma pessoa pode entrar em um evento. O programa analisa o número do ticket, a idade do visitante e se ele possui algum objeto ilícito. A entrada é liberada apenas para maiores de 18 anos, com ticket válido e sem objeto ilícito.
