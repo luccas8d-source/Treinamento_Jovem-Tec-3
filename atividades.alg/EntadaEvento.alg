@@ -1,25 +1,24 @@
 algoritmo "EntradaShow"
 
 var
+   numeroTicket: inteiro
+   idade: inteiro
+   ilicito: caractere
 
-NUMEROTICKET:inteiro
-IDADE:inteiro
-ilicito:caractere
 inicio
-
-escreva("Digite o numero do ticket: ")
-   leia(NUMEROTICKET)
+   escreva("Digite o numero do ticket: ")
+   leia(numeroTicket)
 
    escreva("Digite sua idade: ")
-   leia(IDADE)'
+   leia(idade)
 
-   escreva("O visitante possui um objeto ilícito? (s/n): ")
+   escreva("O visitante possui um objeto ilicito? (s/n): ")
    leia(ilicito)
 
-se ((NUMEROTICKET <= 100) e (IDADE >= 18) e (ilicito = "n") entao
-    escreval("Voce entra no evento"))
-senao
-    escreval("Voce nao entra no evento")
-    fimse
+   se (numeroTicket <= 100) e (idade >= 18) e (ilicito = "n") entao
+      escreval("Voce entra no evento")
+   senao
+      escreval("Voce nao entra no evento")
+   fimse
 
-Fimalgoritmo
+fimalgoritmo
